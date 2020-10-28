@@ -1,4 +1,4 @@
-.gameField{
+.gameField {
     position: absolute;
     width: 600px;
     height: 600px;
@@ -6,30 +6,27 @@
     left: 350px;
     border: 5px dotted blue;
 }
-.snake{
+
+.snake {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
 }
-.tail{
-    top: 85px;
-    left: 360px;
-}
-.torso_1{
-    top: 135px;
-    left: 360px;
-}
-.torso_2{
-    top: 185px;
-    left: 360px;
-}
-.head{
-    top: 235px;
+
+.head {
+    top: 255px;
     left: 360px;
     background-color: green;
 }
 
-body{
+.bonus {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+}
+
+body {
     background-color: #bbfcd0;
 }
