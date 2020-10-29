@@ -15,7 +15,7 @@ snakeDown = () => {
   for (let i = snake.length - 1; i >= 0; i--) {
     let right = parseInt(window.getComputedStyle(snake[i]).left);
     let down = parseInt(window.getComputedStyle(snake[i]).top);
-    if (down + 20 > 625) return true;
+    if (down + 30 > 670) return true;
     else {
       if (moving_turn === "ArrowLeft" || moving_turn === "ArrowRight") {
         if (i === snake.length - 1) {
@@ -58,7 +58,7 @@ snakeUp = () => {
   for (let i = snake.length - 1; i >= 0; i--) {
     let mov = parseInt(window.getComputedStyle(snake[i]).left);
     let top = parseInt(window.getComputedStyle(snake[i]).top);
-    if (top - 30 < 80) return true;
+    if (top - 30 < 75) return true;
     else {
       if (moving_turn === "ArrowLeft" || moving_turn === "ArrowRight") {
         if (i === snake.length - 1) {
@@ -100,7 +100,7 @@ snakeRight = () => {
   for (let i = snake.length - 1; i >= 0; i--) {
     let right = parseInt(window.getComputedStyle(snake[i]).left);
     let top = parseInt(window.getComputedStyle(snake[i]).top);
-    if (right + 90 > 950) {
+    if (right + 30 > 950) {
       return true;
     } else {
       if (i === snake.length - 1)

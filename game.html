@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="gameLogic.js"></script>
+    <script src="bonusLogic.js"></script>
+    <link rel="stylesheet" href="gameStyle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Title</title>
-  <script src="gameLogic.js"></script>
-  <script src="bonusLogic.js"></script>
-  <link rel="stylesheet" href="gameStyle.css" />
-</head>
-
-<body>
-  <div id="main">
-    <div id="headSnake" class="snake head"></div>
-    <div id="mainBonus" class="bonus"></div>
-  </div>
-  <div class="gameField"></div>
-</body>
-
+  <body>
+    <div id="main">
+      <div id="headSnake" class="snake head">
+        <div class="eyes">
+          <div class="leftEye"></div>
+          <div class="rightEye"></div>
+        </div>
+        <div class="tongueSnake"></div>
+      </div>
+      <div id="mainBonus" class="bonus">
+        <img src="./image/apple.svg" class="imgBonus" />
+      </div>
+    </div>
+    <div class="gameField"></div>
+  </body>
 </html>

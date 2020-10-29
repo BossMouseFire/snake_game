@@ -4,7 +4,9 @@
     height: 600px;
     top: 75px;
     left: 350px;
-    border: 5px dotted blue;
+    border: 10px solid green;
+    background-image: url('./background.jpg');
+    z-index: -10;
 }
 
 .snake {
@@ -17,16 +19,55 @@
 .head {
     top: 255px;
     left: 360px;
-    background-color: green;
+    background-color: #038024;
+    display: flex;
+    flex-direction: column;
 }
 
 .bonus {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: yellow;
+}
+
+.imgBonus {
+    width: 30px;
+    height: 30px;
 }
 
 body {
     background-color: #bbfcd0;
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+}
+
+.leftEye {
+    width: 25%;
+    height: 25%;
+    margin-top: 35%;
+    margin-left: 9%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.rightEye {
+    width: 25%;
+    height: 25%;
+    margin-top: 35%;
+    margin-left: 28%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.tongueSnake {
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    background-color: pink;
+    margin-left: 40%;
+    margin-top: 85%;
 }

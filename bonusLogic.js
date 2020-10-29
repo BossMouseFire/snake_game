@@ -20,11 +20,11 @@ let NewTorsoSnake = () => {
     if (headTop - 30 < 80 || headLeft + 30 > 950 || torsoTop - 30 < 80) {
         torsoDiv.style.left = String(torsoLeft - 30) + "px";
         torsoDiv.style.top = String(torsoTop) + "px";
-        torsoDiv.style.backgroundColor = "#eb4034";
+        torsoDiv.style.backgroundColor = "#037020";
     } else {
         torsoDiv.style.left = String(torsoLeft + 30) + "px";
         torsoDiv.style.top = String(torsoTop) + "px";
-        torsoDiv.style.backgroundColor = "#eb4034";
+        torsoDiv.style.backgroundColor = "#037020";
     }
     head.prepend(torsoDiv);
 };
@@ -38,7 +38,7 @@ let BonusGet = () => {
     let a4 = parseInt(document.getElementById('mainBonus').style.left);
     if (Math.abs(a4 - a2) <= 25 && Math.abs(a3 - a1) <= 25) {
         NewTorsoSnake();
-        bonusDiv.style.top = String(getRandomInt(75, 675)) + "px";
+        bonusDiv.style.top = String(getRandomInt(75, 665)) + "px";
         bonusDiv.style.left = String(getRandomInt(350, 950)) + "px";
     }
 }
